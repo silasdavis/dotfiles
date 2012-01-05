@@ -62,6 +62,8 @@ autocmd FileType lisp let g:slimv_client='python /usr/share/vim/vimfiles/ftplugi
 nnoremap <silent> <F8> :TagbarToggle<CR>
 inoremap <silent> <F8> <esc>:TagbarToggle<CR>a
 
+"
+set guifont=DejaVu\ LGC\ Sans\ Mono\ 10
 
 " -[ Plugins and Scripts ]-
 " taglist
