@@ -93,7 +93,7 @@ tabTheme1 = defaultTheme { decoHeight = 16
                          }
 
 -- workspaces
-workspaces' = ["1-main", "2-web", "3-mail", "4-torrents", "5-im", "6", "7", "8", "9"]
+workspaces' = ["1-main", "2-web", "3-music", "4", "5", "6", "7", "8-upgrade", "9-config"]
 
 -- layouts
 layoutHook' = tile ||| mtile ||| tab ||| full
@@ -125,6 +125,7 @@ keys' conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
     , ((modMask .|. shiftMask, xK_p     ), spawn "gmrun")
     , ((modMask .|. shiftMask, xK_m     ), spawn "claws-mail")
     , ((modMask .|. shiftMask, xK_c     ), kill)
+    , ((modMask,               xK_f     ), spawn "xfbrowser4") 
 
     -- grid
     , ((modMask,               xK_g     ), goToSelected myGSConfig)
