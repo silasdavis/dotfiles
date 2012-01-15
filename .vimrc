@@ -2,6 +2,7 @@
 " general
 set nocompatible
 set nowrap
+set backspace=indent,eol,start
 syntax on
 filetype plugin indent on
 

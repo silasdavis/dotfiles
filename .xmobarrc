@@ -1,7 +1,8 @@
 Config { font = "-*-terminus-*-*-*-*-12-*-*-*-*-*-*-u"
        , bgColor = "#000000"
        , fgColor = "#C9A34E"
-       , position = Top 
+       --, position = Static { xpos = 0 , ypos = 0, width = 1280, height = 16 }
+       , position = TopW L 94
        , lowerOnStart = True
        , commands = [ Run Network "eth0" ["-L", "8", "-H", "32", "-l", "#C9A34E", "-n", "#429942" ,"-h", "#A36666", "-t", "<dev>: <rx> : <tx>"] 10
                     , Run Cpu ["-L","3","-H","50","--normal","#429942","--high","#A36666"] 10

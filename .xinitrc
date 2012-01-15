@@ -35,3 +35,4 @@ xmonad)
 	exec $DEFAULT_SESSION
 	;;
 esac
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
