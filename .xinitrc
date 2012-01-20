@@ -20,6 +20,7 @@ openbox)
 	;;
 xmonad)
         /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+        dropboxd &
         trayer --edge top --align right --SetDockType true --SetPartialStrut true --expand true --width 6 --transparent true --alpha 0 --tint 0x000000 --height 16 &  
         nitrogen --restore &  
         xfce4-volumed &

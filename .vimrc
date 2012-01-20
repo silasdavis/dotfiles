@@ -92,3 +92,7 @@ let Tlist_Exit_OnlyWindow = 1
 
 " config edit
 command W w !sudo tee % > /dev/null
+
+" no bells
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=

@@ -59,7 +59,7 @@ manageHook' = composeAll [ isFullscreen             --> doFullFloat
                          , className =? "Vlc"       --> doFloat
 			 , insertPosition Below Newer
 			 , transience'
-                         ] <+> manageDocks
+                         ]
 
 
 -------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ tabTheme1 = defaultTheme { decoHeight = 16
 workspaces' = ["1-main", "2-web", "3-music", "4", "5", "6", "7", "8-upgrade", "9-config"]
 
 -- layouts
-layoutHook' = avoidStruts $ tile ||| mtile ||| tab ||| full
+layoutHook' =  tile ||| mtile ||| tab ||| full
   where
     rt = ResizableTall 1 (2/100) (1/2) []
     tile = named "[]=" $ smartBorders rt
@@ -123,9 +123,11 @@ keys' conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
     [ ((modMask,               xK_Return), spawn $ XMonad.terminal conf) 
     , ((modMask,               xK_p     ), spawn "dmenu_run") 
     , ((modMask .|. shiftMask, xK_p     ), spawn "gmrun")
-    , ((modMask .|. shiftMask, xK_m     ), spawn "claws-mail")
+    , ((modMask .|. shiftMask, xK_m     ), spawn "thunderbird")
     , ((modMask .|. shiftMask, xK_c     ), kill)
-    , ((modMask,               xK_f     ), spawn "xfbrowser4") 
+    , ((modMask,               xK_f     ), spawn "XFBrowser4") 
+    , ((modMask,               xK_slash     ), spawn "pcmanfm") 
+    --, ((modMask .|. mod1Mask,   xK_BackSpace     ), spawn "sudo pm-hibernate")
 
     -- grid
     , ((modMask,               xK_g     ), goToSelected myGSConfig)
