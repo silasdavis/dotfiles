@@ -25,7 +25,7 @@ URxvt*foreground: #C7C7C7
 URxvt*borderless: 1
 
 !--[font]--! 
-URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-u
+!-- URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-u --!
 
 !--[scrolling]--! 
 URxvt*scrollBar: false

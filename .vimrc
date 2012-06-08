@@ -21,6 +21,9 @@ set cindent
 set cinkeys=0{,0},:,0#,!^F
 set autoindent
 set smartindent
+set expandtab
+set shiftwidth=2
+set softtabstop=2
 
 " command mode
 set wildmenu
