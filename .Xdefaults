@@ -23,6 +23,7 @@ URxvt*depth:24
 URxvt*background: #000000
 URxvt*foreground: #C7C7C7
 URxvt*borderless: 1
+URxvt*visualBell: true
 
 !--[font]--! 
 !-- URxvt*font: -*-terminus-*-*-*-*-12-*-*-*-*-*-*-u --!
